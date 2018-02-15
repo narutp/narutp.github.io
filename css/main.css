@@ -1,0 +1,39 @@
+a {
+  color: white;
+}
+body {
+  margin: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.nav {
+  background-color: white;
+  width: 1350px;
+  height: 50px;
+  padding: 5px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.nav-title {
+  float: left;
+  font-size: 30px;
+  background-color: #ff7280;
+  padding: 1px;
+}
+.button {
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-color: white;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  float: right;
+}
+.index--information-button {
+  background-color: #f958a1;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.index--summary-button {
+  background-color: #fb996f;
+}

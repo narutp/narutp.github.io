@@ -6,10 +6,10 @@
   </head>
   <body>
     <div class="index--container">
-      <div class="index--nav">
-        <div class="index--nav-title">Biography</div>
-        <button class="button index--information-button" type="button" name="button">Information</button>
-        <button class="button index--summary-button" type="button" name="button">Summary</button>
+      <div class="nav">
+        <div class="nav-title" onclick="index()">Biography</div>
+        <button class="button index--information-button" type="button" name="button"><a href="information.html">Information</a></button>
+        <button class="button index--summary-button" type="button" name="button"><a href="summary.html">Summary</a></button>
       </div>
       <div class="index--header">
         <img class="index--image" src="image/beach.jpg"></img>
@@ -19,13 +19,13 @@
   </body>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <script>
+    function index() {
+      window.location = "index.html"
+    }
   </script>
 
+<link rel="stylesheet" href="css/main.css">
 <style>
-body {
-  margin: 0px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
 .index--header {
   position: relative;
   text-align: center;
@@ -38,37 +38,13 @@ body {
   font-size: 70px;
   transform: translate(-50%, -50%);
 }
-.index--nav {
-  background-color: white;
-  width: 1350px;
-  height: 50px;
-  padding: 5px;
-  vertical-align: middle;
-  display: table-cell;
-}
-.index--nav-title {
-  float: left;
-  font-size: 30px;
-}
 .index--image {
   width: 100%;
-  opacity: 0.8;
+  opacity: 1.0;
   height: 500px;
 }
-.button {
-  color: white;
-  width: 100px;
-  height: 40px;
-  border-color: white;
-  border: none;
-  border-radius: 5%;
-  cursor: pointer;
-}
-.index--information-button {
-  background-color: #f958a1;
-}
-.index--summary-button {
-  background-color: #fb996f;
+.index--image:hover{
+  opacity: 0.8;
 }
 </style>
 </html>
