@@ -4,6 +4,7 @@ a {
 body {
   margin: 0px;
   font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 15px;
 }
 .nav {
   background-color: white;
@@ -36,4 +37,7 @@ body {
 }
 .index--summary-button {
   background-color: #fb996f;
+}
+.footer {
+  text-align: center;
 }
