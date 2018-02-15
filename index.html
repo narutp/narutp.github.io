@@ -7,7 +7,9 @@
   <body>
     <div class="index--container">
       <div class="index--nav">
-        <button class="index--button" type="button" name="button">Information</button>
+        <div class="index--nav-title">Biography</div>
+        <button class="button index--information-button" type="button" name="button">Information</button>
+        <button class="button index--summary-button" type="button" name="button">Summary</button>
       </div>
       <div class="index--header">
         <img class="index--image" src="image/beach.jpg"></img>
@@ -22,6 +24,7 @@
 <style>
 body {
   margin: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .index--header {
   position: relative;
@@ -30,7 +33,6 @@ body {
 }
 .index--header-title {
   position: absolute;
-  font-family: 'Roboto Condensed', sans-serif;
   top: 50%;
   left: 50%;
   font-size: 70px;
@@ -40,18 +42,33 @@ body {
   background-color: white;
   width: 1350px;
   height: 50px;
+  padding: 5px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.index--nav-title {
+  float: left;
+  font-size: 30px;
 }
 .index--image {
   width: 100%;
   opacity: 0.8;
   height: 500px;
 }
-.index--button {
-  background-color: #f958a1;
+.button {
   color: white;
   width: 100px;
   height: 40px;
   border-color: white;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.index--information-button {
+  background-color: #f958a1;
+}
+.index--summary-button {
+  background-color: #fb996f;
 }
 </style>
 </html>
